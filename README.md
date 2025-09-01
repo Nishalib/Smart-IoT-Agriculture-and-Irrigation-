@@ -30,7 +30,8 @@ This system ensures **optimized water usage, reduced manual intervention, and im
 
 ---
 
-##  Bill of Materials
+##  Components
+
 | S.No | Component                              | Quantity |
 |------|----------------------------------------|----------|
 | 1    | NodeMCU ESP8266 Board                  | 1        |
