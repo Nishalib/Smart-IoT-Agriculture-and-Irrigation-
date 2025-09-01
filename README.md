@@ -2,6 +2,10 @@
 
 > Automating irrigation with soil moisture & environmental monitoring powered by IoT and NodeMCU ESP8266.
 
+<p align="center">
+   <img width="906" height="504" alt="image" src="https://github.com/user-attachments/assets/f1317ef8-c35d-40b5-a74a-1b52329d8567" />
+</p>
+
 ---
 
 ##  Overview
@@ -46,15 +50,18 @@ This system ensures **optimized water usage, reduced manual intervention, and im
    <<img width="737" height="537" alt="image" src="https://github.com/user-attachments/assets/1b8246ee-60dc-4e42-aed6-06f7f592adf7" />>
 </p>
 
+
 ## Install required libraries:
+   step - 1 
 - [Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library)  
 - [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306)  
 - [DHT Sensor Library](https://github.com/adafruit/DHT-sensor-library)  
-4. Connect NodeMCU to your PC via USB.  
-5. Open the provided `.ino` sketch in Arduino IDE.  
-6. Update your Wi-Fi credentials & API Key.  
-7. Upload the code to NodeMCU.  
-8. Power up the circuit & start monitoring on **ThingSpeak**.  
+
+  step - 2: Connect NodeMCU to your PC via USB.  
+  step - 3: Open the provided `.ino` sketch in Arduino IDE.  
+  step - 4: Update your Wi-Fi credentials & API Key.  
+  step - 5: Upload the code to NodeMCU.  
+  step - 6: Power up the circuit & start monitoring on **ThingSpeak**.  
 
 ---
 
