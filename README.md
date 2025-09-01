@@ -47,7 +47,62 @@ This system ensures **optimized water usage, reduced manual intervention, and im
 ##  System Architecture
 
 <p align="center">
-   <<img width="737" height="537" alt="image" src="https://github.com/user-attachments/assets/1b8246ee-60dc-4e42-aed6-06f7f592adf7" />>
+   <img width="737" height="537" alt="image" src="https://github.com/user-attachments/assets/1b8246ee-60dc-4e42-aed6-06f7f592adf7" />
+</p>
+
+# Circuit Connection - IoT Smart Agriculture & Irrigation (ESP8266)
+
+This document explains the circuit wiring for the IoT Smart Agriculture & Automatic Irrigation System using NodeMCU ESP8266.
+
+## Components
+- NodeMCU ESP8266  
+- Capacitive Soil Moisture Sensor  
+- DHT11 Temperature & Humidity Sensor  
+- 1-Channel 5V Relay Module  
+- 5V DC Water Pump  
+- OLED Display (0.96" I2C)  
+- Breadboard, Jumper Wires, Power Supply  
+
+## Connections
+
+### Soil Moisture Sensor
+- VCC → 3.3V  
+- GND → GND  
+- OUT → A0  
+
+### DHT11 Sensor
+- VCC → 3.3V  
+- GND → GND  
+- Data → D4  
+
+### Relay Module
+- VCC → 5V (VIN)  
+- GND → GND  
+- IN → D5  
+
+### Water Pump
+- Positive → Relay Output  
+- Negative → GND (Power Supply)  
+
+### OLED Display (I2C)
+- VCC → 3.3V  
+- GND → GND  
+- SDA → D2  
+- SCL → D1  
+
+## Power Supply
+- Sensors and OLED → 3.3V  
+- Relay and Pump → 5V  
+- Common ground required between NodeMCU and relay module  
+
+## Notes
+- Do not connect the pump directly to NodeMCU.  
+- Use external 5V supply if pump draws high current.  
+- Double-check wiring before powering on.  
+
+
+<p align="center">
+   <img width="887" height="399" alt="image" src="https://github.com/user-attachments/assets/83907704-9d16-42b9-ab46-9c472d405d3a" />
 </p>
 
 
@@ -70,7 +125,6 @@ For a more compact solution, you can design a **PCB** using EasyEDA.
 - Gerber files are available in `/PCB` folder.  
 - Order your PCB from services like [ALLPCB](https://www.allpcb.com/) or JLCPCB.  
 
- *(Insert PCB front & back image here)*
 
 ---
 
